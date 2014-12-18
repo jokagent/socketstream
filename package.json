@@ -1,0 +1,84 @@
+{
+  "name": "tvi-socketstream",
+  "description": "A fast, modular Node.js framework dedicated to building realtime single-page apps",
+  "version": "0.3.11",
+  "homepage": "http://www.socketstream.org",
+  "author": "Owen Barnes <owen@socketstream.org>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/socketstream/socketstream"
+  },
+  "contributors": [
+    "Paul Jensen",
+    "Alan Milford",
+    "Addy Osmani",
+    "nponeccop",
+    "Gilbert B Garza",
+    "Craig Jordan Muir",
+    "David Rosen",
+    "Michael Lawson"
+  ],
+  "dependencies": {
+    "apitree": "= 1.2.0",
+    "chokidar": "= 0.9.0",
+    "clean-css": "= 0.4.2",
+    "colors": "= 1.0.3",
+    "commander": "= 2.3.0",
+    "connect": "2.26.5",
+    "connect-redis": "= 1.4.4",
+    "engine.io": "= 0.7.9",
+    "eventemitter2": "= 0.4.14",
+    "redis": "= 0.12.1",
+    "semver": "= 4.0.3",
+    "uglify-js": "= 1.3.3",
+    "uid2": "0.0.3"
+  },
+  "devDependencies": {
+    "async": "0.2.9",
+    "connect-livereload": "0.4.0",
+    "coveralls": "2.11.2",
+    "grunt": "0.4.5",
+    "grunt-cli": "0.1.13",
+    "grunt-concurrent": "1.0.0",
+    "grunt-contrib-clean": "0.6.0",
+    "grunt-contrib-connect": "0.8.0",
+    "grunt-contrib-watch": "0.6.1",
+    "grunt-conventional-changelog": "1.1.0",
+    "grunt-ngdocs": "0.2.5",
+    "istanbul": "0.3.2",
+    "jshint": "2.5.6",
+    "mocha": "1.21.4",
+    "notes": "0.0.4",
+    "npm-dview": "1.0.0",
+    "shelljs": "0.3.0",
+    "should": "4.0.4",
+    "supertest": "0.14.0"
+  },
+  "scripts": {
+    "cover-test": "istanbul cover node_modules/.bin/_mocha test/unit/**/* && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "checkDependencies": "npm-dview",
+    "lint": "jshint .",
+    "notes": "notes",
+    "test": "mocha test/unit/**/* --reporter spec"
+  },
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "main": "./index.js",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "bin": {
+    "socketstream": "./bin/socketstream"
+  },
+  "bugs": {
+    "url": "https://github.com/socketstream/socketstream/issues"
+  },
+  "dist": {
+    "shasum": "a4625c5d4670ceeccc84ba8ab66153539da76b57"
+  },
+  "_from": "socketstream@",
+  "_resolved": "https://registry.npmjs.org/socketstream/-/socketstream-0.3.11.tgz",
+  "license": "ISC"
+}
